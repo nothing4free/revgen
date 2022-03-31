@@ -32,9 +32,6 @@ else:
                                                      " or path.")
     exit()
 
-if args.lang is not None:
-    lang = args.lang
-
 php_reverse = [
     "<?php",
     "set_time_limit (0);",

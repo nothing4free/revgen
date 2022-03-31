@@ -21,7 +21,6 @@ parser = ArgumentParser()
 parser.add_argument("-i", "--ip", dest="host", help="specify your IP address here.")
 parser.add_argument("-p", "--port", dest="port", help="specify your nc listening port here.")
 parser.add_argument("-o", "--output", dest="output", help="specify the revshell name here.")
-parser.add_argument("-l", "--language", dest="lang", help="specify the revshell's programming language.")
 args = parser.parse_args()
 
 if args.host is not None or args.port is not None and args.output is not None:

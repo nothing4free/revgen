@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # revgen: generate reverse shell payloads for use on various webapp pentesting applications.
 
 import string
@@ -137,13 +139,3 @@ try:
 except:
     print(" [" + bcolors.FAIL + "!" + bcolors.ENDC + "] ERROR: Something went wrong while creating " + file + ".")
     exit()
-
-# substitute the template variables
-# with open(file, "r") as f:
-#     file = f.read()
-#     template_file = file
-#     t = string.Template(template_file)
-#     print(host)
-#     print(port)
-#     result = t.substitute(python_ip=host, python_port=port)
-#     print(result)
